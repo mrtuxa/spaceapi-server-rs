@@ -5,8 +5,8 @@ use std::sync::Arc;
 use quick_error::quick_error;
 use redis::Commands;
 use redis::RedisError;
+use spaceapi_dezentrale::sensors::SensorTemplate;
 
-use crate::api;
 use crate::types::RedisPool;
 
 /// A specification of a sensor.
