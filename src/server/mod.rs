@@ -202,7 +202,7 @@ impl SpaceapiServer {
         // Launch server process
         let router = self.route();
         println!("Starting HTTP server on:");
-        for a in socket_addr.to_socket_addrs()? {
+        /*for a in socket_addr.to_socket_addrs()? {
             println!("\thttp://{}", a);
         }*/
         Iron::new(router).http(socket_addr)
